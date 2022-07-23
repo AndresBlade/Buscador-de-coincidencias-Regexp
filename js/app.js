@@ -12,13 +12,11 @@ eventListeners();
 function eventListeners() {
 	//Cuando el DOM se carga
 	document.addEventListener('DOMContentLoaded', e => {
-		console.log('cargado');
+		ui.crearHTMLExpresion();
 	});
 
 	//Cuando subimos nuestra entrada
 
-	formulario.addEventListener('input', procesarEntrada);
-	formulario.addEventListener('submit', e => {
-		e.preventDefault();
-	});
+	// formulario.addEventListener('input', procesarEntrada);
+	formulario.addEventListener('submit', procesarEntrada);
 }

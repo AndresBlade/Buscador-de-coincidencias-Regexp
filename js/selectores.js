@@ -1,5 +1,9 @@
 export const formulario = document.forms[0];
 
-export const inputs = formulario.querySelectorAll('input');
+export const inputsText = formulario.querySelectorAll('input[type="text"]');
+export const inputsCheckbox = [
+	...formulario.querySelectorAll('input[type="checkbox"]'),
+];
 
-export const [inputPalabra] = inputs;
+const banderaG = document.querySelector('·bandera-g');
+export const [inputPalabra, inputPatron] = inputsText;

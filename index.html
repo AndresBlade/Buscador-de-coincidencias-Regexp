@@ -24,12 +24,92 @@
 			<div class="container">
 				<form class="procesador" action="" id="procesador">
 					<div class="procesador__entrada">
-						<label for="word" class="form__label">Palabra:</label>
+						<div class="form__entrada">
+							<label for="word" class="form__label"
+								>Palabra:</label
+							>
+							<input
+								type="text"
+								class="form__input"
+								name="word"
+								id="word"
+								placeholder="Ingrese la palabra"
+							/>
+						</div>
+						<div class="form__entrada form__entrada--expresion">
+							<div class="form__patron">
+								<label for="regex" class="form__label"
+									>Patrón:</label
+								>
+								<input
+									type="text"
+									class="form__input"
+									name="regex"
+									id="regex"
+									placeholder="Ingrese el patrón"
+								/>
+							</div>
+							<div class="form__banderas">
+								<div class="form__bandera">
+									<label for="bandera-g">g</label>
+									<input
+										type="checkbox"
+										name="bandera"
+										id="bandera-g"
+										value="g"
+									/>
+								</div>
+								<div class="form__bandera">
+									<label for="bandera-i">i</label>
+									<input
+										type="checkbox"
+										name="bandera"
+										id="bandera-i"
+										value="i"
+									/>
+								</div>
+								<div class="form__bandera">
+									<label for="bandera-s">s</label>
+									<input
+										type="checkbox"
+										name="bandera"
+										id="bandera-s"
+										value="s"
+									/>
+								</div>
+								<div class="form__bandera">
+									<label for="bandera-m">m</label>
+									<input
+										type="checkbox"
+										name="bandera"
+										id="bandera-m"
+										value="m"
+									/>
+								</div>
+								<div class="form__bandera">
+									<label for="bandera-u">u</label>
+									<input
+										type="checkbox"
+										name="bandera"
+										id="bandera-u"
+										value="u"
+									/>
+								</div>
+								<div class="form__bandera">
+									<label for="bandera-y">y</label>
+									<input
+										type="checkbox"
+										name="bandera"
+										id="bandera-y"
+										value="y"
+									/>
+								</div>
+							</div>
+						</div>
 						<input
-							type="text"
-							class="form__input"
-							name="word"
-							id="word"
+							type="submit"
+							class="form__enviar"
+							value="Evaluar"
 						/>
 					</div>
 					<div
